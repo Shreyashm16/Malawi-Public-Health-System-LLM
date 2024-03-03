@@ -12,3 +12,9 @@ Hence, we use the RAG approach to solve the task. Here's how it works:
 * Augmentation: This retrieved information is then combined with the original prompt to provide the LLM with additional context and factual grounding.
 * Generation: Finally, the LLM uses this augmented prompt to generate its response. This response would be more accurate and reliable because it's based on both the LLM's internal knowledge and the retrieved factual information. 
 
+### Possible Improvements
+
+* Using a much better LLM: There are a bunch of top-performing models that are still relatively small in size.
+* Finetuning the LLM: You can try a trained LLM on the train set Q/A pairs instead of RAG.
+* Finetuning + RAG: Research has shown that this is a much better approach than a standalone solution. 
+* Prompt Engineering: Introduce your prompt for the LangChain QA Chain. We used the default from LangChain. 
